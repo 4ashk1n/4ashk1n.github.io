@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/tasks.css') }}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tasks</title>
+    </head>
+    <body>
+        <div id="topmenu" class="topmenu">
+        </div>
+
+        <div id="table-header" class="table-header">
+            <h1 class="table-header">
+                Задания
+            </h1>
+        </div>
+
+        <div id="task-table" class="task-table">
+             <table border=1>
+             <thead>
+             <tr class="t_h">
+                 <td class="t_h">ID</td>
+                <td class="t_h">Groups</td>
+                <td class="t_h">Text</td>
+                <td class="t_h">Answer</td>
+                <td class="t_h">Image</td>
+             </tr>
+
+             </thead>
+             <tbody>
+                {% for row in rows %}
+                    <tr>
+                       <td class="data">{{row[0]}}</td>
+                       <td class="data">{{row[1]}}</td>
+                       <td class="data">{{row[2]}}</td>
+                       <td class="data">{{row[3]}}</td>
+                       <td class="data">{{row[4]}}</td>
+                    </tr>
+                 {% endfor %}
+
+             </tbody>
+
+<!--                         {% for row in rows %}-->
+<!--                            <tr>-->
+<!--                               <td>{{row[0]}}</td>-->
+<!--                               <td>{{row[1]}}</td>-->
+<!--                               <td> {{ row[2]}}</td>-->
+<!--                               <td><a href = "{{ row[3]}}">-->
+<!--                                  <img src = "{{ row[3]}}"-->
+<!--                                      style="width: 500px; max-width: 100%; height: auto"-->
+<!--                            title="Нажмите, чтобы увидеть полную версию"  alt="Картинка отсутствует"/>-->
+<!--                                  </a>-->
+<!--                               </td>-->
+<!--                    -->
+<!--                    -->
+<!--                            </tr>-->
+<!--                         {% endfor %}-->
+            </table>
+        </div>
+
+
+<!--      <a href = "/">Go back to home page</a>-->
+
+   </body>
+
+</html>

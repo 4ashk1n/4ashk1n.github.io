@@ -1,0 +1,155 @@
+@font-face {
+ font-family: "Tw Cen MT";
+    src: url("Tw Cen MT.ttf");
+}
+
+@media (min-width: 768px) {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+		width: 100%;
+		/*background-color: #6C50B0;*/
+	}
+	table{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+		border-color: #4a3287;
+		border-width: 3px;
+		border-style: solid;
+		background-color: #6C50B0;
+		margin-bottom: 5%;
+	}
+
+	tr{
+		height: 30px;
+		background-color: #ffffff;
+	}
+
+	thead{
+		height: 50px;
+
+	}
+
+
+	td.t_h{
+		font-family: "Tw Cen MT";
+		font-size: 25px;
+		text-align: center;
+		color: white;
+		background-color: #6C50B0;
+		/*text-shadow: black 2px 2px 0;*/
+
+	}
+	td.data{
+		padding: 10px;
+		font-size: 20px;
+
+	}
+
+
+
+	div.task-table{
+		margin-top: 10px;
+
+	}
+
+	div.topmenu{
+		height: 100px;
+		width: 100%;
+		border: none;
+		background-color: #04aa6d;
+	}
+
+	h1.table-header{
+		/*font-family: "Tw Cen MT";*/
+		font-size: 50px;
+		text-align: center;
+		color: #333333;
+	}
+
+	tr:hover{
+		background-color: #e7e4ef;
+	}
+	td.data:hover{
+		background-color: #d5d2e7;
+	}
+
+	/*tr:nth-child(even) {background-color: #f2f2f2;}*/
+}
+
+@media (max-width: 768px) {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		width: 100%;
+		margin: 0;
+		/*background-color: #6C50B0;*/
+	}
+	table{
+		width: 100%;
+		border-collapse: collapse;
+		border-color: #4a3287;
+		border-width: 3px;
+		border-style: solid;
+		background-color: #6C50B0;
+		margin: 0 0 5% 0;
+	}
+
+	tr{
+		height: 20px;
+		background-color: #ffffff;
+	}
+
+	thead{
+		height: 32px;
+
+	}
+
+
+	td.t_h{
+		font-family: "Tw Cen MT";
+		font-size: 18px;
+		text-align: center;
+		color: white;
+		background-color: #6C50B0;
+		/*text-shadow: black 2px 2px 0;*/
+
+	}
+	td.data{
+		padding: 6px;
+		font-size: 13px;
+
+	}
+
+
+
+	div.task-table{
+		margin-top: 8px;
+
+	}
+
+	div.topmenu{
+		height: 65px;
+		width: 100%;
+		border: none;
+		background-color: #04aa6d;
+	}
+
+	h1.table-header{
+		/*font-family: "Tw Cen MT";*/
+		font-size: 32px;
+		text-align: center;
+		color: #333333;
+	}
+
+	tr:hover{
+		background-color: #e7e4ef;
+	}
+	td.data:hover{
+		background-color: #d5d2e7;
+	}
+
+	/*tr:nth-child(even) {background-color: #f2f2f2;}*/
+
+}
